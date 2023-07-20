@@ -1,10 +1,3 @@
-@import url(./__content/popup__content.css);
-@import url(./__title/popup__title.css);
-@import url(./__form/popup__form.css);
-@import url(./__input/popup__input.css);
-@import url(./__input-error/popup__input-error.css);
-@import url(./__button/popup__button.css);
-
 .popup {
     background: #fff;
     padding: 40px;
