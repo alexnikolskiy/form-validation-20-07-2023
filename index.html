@@ -11,22 +11,22 @@
 <div class="page__container">
   <div class="popup">
     <h3 class="popup__title">Форма регистрации</h3>
-    <form class="popup__form" name="registration">
+    <form class="popup__form" name="registration" novalidate>
       <label class="popup__label">
-        <input type="text" id="username" name="username" class="popup__input" placeholder="Имя">
+        <input type="text" id="username" name="username" class="popup__input" placeholder="Имя" minlength="3" required>
         <span class="username-error popup__input-error"></span>
       </label>
       <label class="popup__label">
-        <input type="text" id="email" name="email" class="popup__input" placeholder="Email">
+        <input type="email" id="email" name="email" class="popup__input" placeholder="Email" required>
         <span class="email-error popup__input-error"></span>
       </label>
       <label class="popup__label">
-        <input type="text" id="password" name="password" class="popup__input" placeholder="Пароль">
+        <input type="password" id="password" name="password" class="popup__input" placeholder="Пароль" required>
         <span class="password-error popup__input-error"></span>
       </label>
       <label class="popup__label">
-        <input type="text" id="password-repeat" name="password-repeat" class="popup__input"
-               placeholder="Пароль ещё раз">
+        <input type="password" id="password-repeat" name="password-repeat" class="popup__input"
+               placeholder="Пароль ещё раз" required>
         <span class="password-repeat-error popup__input-error"></span>
       </label>
       <button type="submit" class="button popup__button popup__button_save">Сохранить</button>
